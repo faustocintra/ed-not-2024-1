@@ -24,7 +24,9 @@ def bubble_sort(lista):
 
         # Percurso da lista, do primeiro ao PENÚLTIMO elemento,
         # com acesso a cada posição
-        for pos in range(len(lista) - 1):
+        # VERSÃO 2: o range encolhe à medida que o número de
+        # passadas aumenta
+        for pos in range(len(lista) - passd):
 
             # Se o valor que está à frente na lista (pos + 1)
             # for MENOR do que aquele que está atrás (pos),
